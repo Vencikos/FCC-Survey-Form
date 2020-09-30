@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Demographic Survey</title>
+        <meta name="description" content="Survey Form ">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <div class="description-info">
+       <h1 id="title">Demographic Survey</h1>   
+       <p id="description">Thank you for joining our demographic survey. Your feedback will help us learn more about the demographic makeup of our questionnaire respondents, and will help us better understand the current state of the industry.</p>
+    </div>
+    <div class="survey-form">
+        <form id="survey-form">          
+
+          <!-------------------------------------Name input------------------------------------------->
+
+          <div id="name-input" class="survey-sections">
+            <label id="name-label">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" class="input-field" required>
+          </div>
+
+          <!-------------------------------------E-mail input----------------------------------------->
+
+          <div id="email-input" class="survey-sections">
+            <label id="email-label">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="E-mail" class="input-field" required>
+          </div>
+
+          <!-------------------------------------Age input-------------------------------------------->
+
+          <div id="age-input" class="survey-sections"> 
+            <label id="number-label">Age:</label>
+            <input type="number" min="15" max="80" id="number" name="age" placeholder="Enter your age" class="input-field" required>
+          </div>
+
+          <!-------------------------------------Gender input-----------------------------------------> 
+
+          <div id="gender-input" class="survey-sections">
+            <p id="gender">Gender:</p>
+            <label for="gender-male">Male</label>
+            <input type="radio" id="gender-male" name="gender" value="male" required>
+            <label for="gender-female">Female</label>
+            <input type="radio" id="gender-female" name="gender" value="female" required>
+            <label for="gender-other">Other</label>
+            <input type="radio" id="gender-other" name="gender" value="other" required>
+          </div>  
+
+          <!-------------------------------------Ethnicity input-------------------------------------->
+            
+          <div id="ethnicity-input" class="survey-sections">
+            <p class="p-text">What is your ethnicity?</p>
+            <select id="dropdown" name="ethnicity" class="input-field" required>
+              <option disabled selected value>Select ethnicity</option>
+              <option value="caucasian">Caucasian</option>
+              <option value="african-american">African-American</option>
+              <option value="latino or hispanic">Latino or Hispanic</option>
+              <option value="asian">Asian</option>
+              <option value="native-american">Native American</option>
+              <option value="native hawaiian or pacific islander"> Native Hawaiian or Pacific Islander</option>
+              <option value="two or more">Two or More</option>
+              <option value="other/unknown">Other/Unknown</option>
+              <option value="prefer not to say">Prefer not to say</option>
+            </select>
+          </div>  
+            
+          <!-------------------------------------Location input--------------------------------------->
+
+          <div id="location-input" class="survey-sections">
+            <p class="p-text">Where do you live?</p>
+            <select id="dropdown" name="location" class="input-field" required>
+              <option disabled selected value>Select location</option>
+              <option value="north america">North America</option>
+              <option value="south america">South America</option>
+              <option value="europe">Europe</option>
+              <option value="africa">Africa</option>
+              <option value="asia">Asia</option>
+              <option value="australia">Australia</option>
+              <option value="caribbean islands">Caribbean Islands</option>
+              <option value="pacific islands">Pacific Islands</option>
+              <option value="other">Other</option>
+              <option value="prefer not to say">Prefer not to say</option>
+            </select>
+          </div>  
+
+          <!-------------------------------------Education input-------------------------------------->
+
+          <div id="education-input" class="survey-sections"> 
+            <p class="p-text">What is your education?</p>
+            <select id="dropdown" name="education" class="input-field" required>
+              <option disabled selected value>Select education</option>
+              <option value="high school">High school</option>
+              <option value="bachelor">Bachelor's Degree</option>
+              <option value="master">Master's Degree</option>
+              <option value="Ph.D.">Ph.D. or higher</option>
+            </select>
+          </div>  
+
+          <!-------------------------------------Income input----------------------------------------->
+
+          <div id="income-input" class="survey-sections"> 
+            <p class="p-text">What is your income?</p>
+            <select id="dropdown" name="income" class="input-field" required>
+              <option disabled selected value>Select income</option>
+              <option value="less than $25000">Less than $25,000</option>
+              <option value="$25,000 - $50,000">$25,000 - $50,000</option>
+              <option value="$50,000 - $100,000">$50,000 - $100,000</option>
+              <option value="More than $200,000">More than $200,000</option>
+              <option value="Prefer not to say">Prefer not to say</option>
+            </select>
+          </div>  
+
+          <!-------------------------------------Employment input------------------------------------->
+
+          <div id="employment-input" class="survey-sections">
+            <p class="p-text">What is your employment status?</p>
+            <select id="dropdown" name="employment" class="input-field" required>
+              <option disabled selected value>Select employment status</option>
+              <option value="full-time">Employed Full-Time</option>
+              <option value="part-time">Employed Part-Time</option>
+              <option value="seeking opportunities">Seeking opportunities</option>
+              <option value="retired">Retired</option>
+              <option value="prefer not to say">Prefer not to say</option>
+            </select>
+          </div>
+
+          <!-------------------------------------Language input--------------------------------------->
+
+          <div id="language-input" class="survey-sections">
+            <p class="p-text">Which languages are you capable of speaking fluently? (Check all that apply):</p>
+            <label for="english">
+            <input type="checkbox" id="english" name="english" value="english" class="checkbox-field" required>English</label>
+            <label for="german">
+            <input type="checkbox" id="german" name="german" value="german" class="checkbox-field" required>German</label>
+            <label for="spanish">
+            <input type="checkbox" id="spanish" name="spanish" value="spanish" class="checkbox-field" required>Spanish</label>
+            <label for="french">
+            <input type="checkbox" id="french" name="french" value="french" class="checkbox-field" required>French</label>
+            <label for="russian">
+            <input type="checkbox" id="russian" name="russian" value="russian" class="checkbox-field" required>Russian</label>
+            <label for="chineese">
+            <input type="checkbox" id="chineese" name="chineese" value="chineese" class="checkbox-field" required>Chineese</label>
+          </div>  
+
+          <!----------------------------------------Comments------------------------------------------>
+
+          <div id="comments-input" class="survey-sections">
+            <p class="p-text">Additional comments and suggestions:</p>
+            <textarea cols="50" rows="10" id="comments" name="comments" class="checkbox-field" placeholder="Enter your comment here..."></textarea>
+          </div>  
+
+          <!-------------------------------------Submit button---------------------------------------->
+
+            <label for="submit"></label>
+            <input type="submit"  id="submit" name="submit" class="submit-button" required>
+
+        </form>
+    </div>
+</html>

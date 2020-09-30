@@ -1,0 +1,96 @@
+html {
+    background: url('https://storage.googleapis.com/ltkcms.appspot.com/fs/yd/images/cover/30794.demographic-pie-chart.base?v=1585301987');
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+body {
+    font-family: "Prompt", Arial, Helvetica, sans-serif;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background: rgba(0,0,0,.5);
+}
+
+#name-label, #email-label, #number-label {
+    display: block;
+    padding: 0.3rem;
+    margin-top: 20px;
+}
+
+#gender {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+
+img {
+    opacity: 0.5;
+}
+
+.p-text {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    
+}
+
+.description-info {
+    color: white;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+}
+
+.input-field {
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 35px;
+    opacity: 1;
+    width: 300px;
+    padding-left: 15px;
+}
+
+.option-size {
+    width: 200px;
+    height: auto;
+}
+
+.survey-form {
+    color: white;
+    width: 35%;
+    margin: auto;
+    background-color:#35332c;
+    opacity: 1;
+    border-radius: 15px;
+    padding-left: 10px;
+    margin-bottom: 50px;
+}
+
+.survey-sections {
+    text-align: center;
+    padding: 5px;
+    font-family: "Prompt", Arial, Helvetica, sans-serif; ;
+}
+
+.submit-button {
+    font-family: "Prompt", Arial, Helvetica, sans-serif; 
+    width: 300px;
+    color: black;
+    background-color: #FFD670;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 30px;
+    cursor: pointer;
+    margin: 50px 20px 50px 185px;
+    
+}
+
+#gender-input {
+    text-align: center;
+}
